@@ -14,5 +14,24 @@
         font-family: Ubuntu Condensed;
 
         box-sizing: border-box;
+
+        a {
+            text-decoration: none;
+
+            h1 {
+                padding: 1.8rem;
+                color: var(--white);
+                font-family: Ubuntu Condensed;
+                font-weight: bold;
+            }
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            Button {
+                display: block;
+                border-bottom: 1px solid #9799A6;
+            }
+        }
     }
 }
