@@ -1,25 +1,41 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-const Home: NextPage = () => {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>BuritiScript</title>
-        <meta name="description" content="Um Blog sobre tecnologia e outras coisas." />
-        <link rel="icon" href="/favicon.ico" />
+import { GetStaticProps } from 'next'; 
+import Card from '../components/Card';
+import styles from './home.module.scss';
+import { type } from 'os';
 
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@500;600&display=swap" rel="stylesheet"/> 
-        <meta charSet="UTF-8" />
-      </Head>
+type HomeProps = {
 
-
-      
-    </div>
-  )
 }
 
-export default Home
+export default function Home(props: HomeProps) {
+
+  return (
+    <div className="container">
+      <section className=''>
+      <div className="container">
+          <div className="row">
+            <div className="col-sm-4">
+              <Card/>
+            </div>
+            <div className="col-sm-4">
+              <Card/>
+            </div>
+            <div className="col-sm-4">
+              <Card/>
+            </div>
+            <div className="col-sm-4">
+              <Card/>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+
+
+
+

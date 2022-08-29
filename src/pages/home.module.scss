@@ -1,0 +1,12 @@
+.sessionCards {
+    content: "";
+    
+    padding: 40px 0;
+  
+  }
+  
+  @media(max-width: 749px) {
+    .sessionCards  {
+      margin-bottom: 40px;
+    }
+  }
